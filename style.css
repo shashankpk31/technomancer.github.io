@@ -285,7 +285,7 @@ Header {
 
 /* about section styling */
 .about .title::after{
-    content: "who i am";
+    content: "who We are";
 }
 .about .about-content .left{
     width: 45%;
@@ -337,7 +337,7 @@ Header {
 }
 .services .title::after{
     background: #111;
-    content: "what i provide";
+    content: "what we provide";
 }
 #team .title::before{
     background: #fff;
@@ -633,11 +633,49 @@ footer span a:hover{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #111;
+    text-align: left;
 
 }
 .foot a{
     text-decoration: none;
     color: white;
+}
+
+.foot .foot3{
+    display: grid;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .foot{
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        background-color: #111;
+        text-align: left;
+
+    
+    }
+    .foot .foot3{
+        display: grid;
+        text-align: inherit;
+    }
+}
+@media (max-width: 580px) {
+    .foot{
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: grid;
+        grid-template-columns: 1fr  ;
+        background-color: #111;
+        text-align: left;
+    
+    }
+    .foot .foot3{
+        display: grid;
+        text-align: inherit;
+    }
 }
 
 footer span{
